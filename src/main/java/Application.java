@@ -21,8 +21,8 @@ public class Application {
         String message = "this is java encryption";
 
 
-        String encryptedMessage = assymEncypt.encryptString(message, assymEncypt.makePublicKeyFromString(assymEncypt1.getPublicKeyString()));
-        String encryptedMessage1 = assymEncypt1.encryptString(message, assymEncypt1.makePublicKeyFromString(assymEncypt.getPublicKeyString()));
+        String encryptedMessage = assymEncypt.encryptString(message, assymEncypt.makePublicKeyFromString(publicKey2));
+        String encryptedMessage1 = assymEncypt1.encryptString(message, assymEncypt1.makePublicKeyFromString(publicKey));
         System.out.printf("Message 1: %s\n", encryptedMessage);
         System.out.printf("Message 2: %s\n", encryptedMessage1);
 
