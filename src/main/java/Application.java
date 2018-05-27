@@ -14,15 +14,15 @@ public class Application {
         AssymEncypt assymEncypt = new AssymEncypt();
         AssymEncypt assymEncypt1 = new AssymEncypt();
 
-        String publicKey = assymEncypt.getPublicKeyString();
+        String publicKey1 = assymEncypt.getPublicKeyString();
         String publicKey2 = assymEncypt1.getPublicKeyString();
-        System.out.printf("KEY %s\n", publicKey);
+        System.out.printf("KEY %s\n", publicKey1);
         System.out.printf("KEY2 %s\n", publicKey2);
         String message = "this is java encryption";
 
 
         String encryptedMessage = assymEncypt.encryptString(message, assymEncypt.makePublicKeyFromString(publicKey2));
-        String encryptedMessage1 = assymEncypt1.encryptString(message, assymEncypt1.makePublicKeyFromString(publicKey));
+        String encryptedMessage1 = assymEncypt1.encryptString(message, assymEncypt1.makePublicKeyFromString(publicKey1));
         System.out.printf("Message 1: %s\n", encryptedMessage);
         System.out.printf("Message 2: %s\n", encryptedMessage1);
 
