@@ -20,7 +20,6 @@ public class Application {
         System.out.printf("KEY2 %s\n", publicKey2);
         String message = "this is java encryption";
 
-
         String encryptedMessage = assymEncypt1.encryptString(message, assymEncypt1.makePublicKeyFromString(publicKey2));
         String encryptedMessage1 = assymEncypt2.encryptString(message, assymEncypt2.makePublicKeyFromString(publicKey1));
         System.out.printf("Message 1: %s\n", encryptedMessage);
@@ -28,8 +27,6 @@ public class Application {
 
         System.out.println(assymEncypt1.decryptString(encryptedMessage1));
         System.out.println(assymEncypt2.decryptString(encryptedMessage));
-
-
     }
 
 }
